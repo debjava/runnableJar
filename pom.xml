@@ -25,6 +25,19 @@
 	</dependencies>
 
 	<build>
+        <resources>
+          <resource>
+            <directory>src/resources</directory>
+             <includes>
+                 <include>**/*.properties</include>
+                 <include>**/*.xml</include>
+            </includes>
+            <excludes>
+              <exclude>**/*.jpeg</exclude>
+              <exclude>**/*.gif</exclude>
+            </excludes>
+          </resource>
+    </resources>
 		<plugins>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
